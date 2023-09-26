@@ -23,6 +23,7 @@ ul{
 }
 a{
     text-decoration: none;
+    color: white;
 }
 .flex{
     display: flex;
@@ -57,8 +58,22 @@ a{
 }
 .side-bar{
     width: 250px;
-    background-color:var(--color-black)
+    background-color:var(--color-black);
+    padding: 20px 60px 10px 20px;
 }
+
+img{
+    width: 100%;
+}
+.sidebar-action{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 30px 0;
+}
+
 .main-content{
     width: calc(100% - 250px);
     padding: 90px 20px 0 20px;

@@ -27,6 +27,9 @@ a{
 .flex{
     display: flex;
 }
+.flex-column{
+    flex-direction: column;
+}
 .text-center{
     text-align: center;
 }
@@ -78,4 +81,15 @@ a{
     color: var(--color-white);
     font-size: 1.5em;
     padding: 25px;
+}
+.cards img{
+    width: 100%;
+    padding: 10px;
+}
+.cards{
+    width: calc(100% / 6);
+}
+.cards h3{
+    color: white;
+    font-size: 1em;
 }

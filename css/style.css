@@ -14,10 +14,24 @@
 }
 body{
     background-color: var(--color-dark-color);
+    font-family: 'Montserrat', sans-serif;
+    
 }
 /* utility */
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
 .flex{
     display: flex;
+}
+.text-center{
+    text-align: center;
+}
+.justify-center{
+    justify-content: center;
 }
 
 .wrapper{
@@ -54,4 +68,14 @@ body{
     left: 250px;
     width:calc(100% - 250px);
     height: 70px;
+}
+.navbar a{
+    margin: 10px;
+    color: var(--color-grey);
+    font-weight:bold;
+}
+.cover h2{
+    color: var(--color-white);
+    font-size: 1.5em;
+    padding: 25px;
 }

@@ -63,6 +63,9 @@ a{
     width: calc(100% - 250px);
     padding: 90px 20px 0 20px;
 }
+.wrap{
+    flex-wrap: wrap;
+}
 .call-to-action{
     background-color:var(--color-black);
     opacity: 0.4;
@@ -80,7 +83,7 @@ a{
 .cover h2{
     color: var(--color-white);
     font-size: 1.5em;
-    padding: 25px;
+    padding: 40px 10px 25px 10px;
 }
 .cards img{
     width: 100%;
@@ -92,4 +95,19 @@ a{
 .cards h3{
     color: white;
     font-size: 1em;
+    padding: 10px;
+}
+.cards h4{
+    color: var(--color-grey);
+}
+
+
+/* mediaquery */
+@media screen and (max-width: 992px){
+    .card-container {
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: calc(100% / 4);
+    }
 }

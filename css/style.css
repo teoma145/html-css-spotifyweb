@@ -38,7 +38,9 @@ a{
 .space{
     justify-content: space-between;
 }
-
+img{
+  width: 100%;
+}
 .px{
     padding: 10px 0;
 }
@@ -47,6 +49,9 @@ a{
 }
 .justify-center{
     justify-content: center;
+}
+.border-rad{
+    border-radius: 50%;
 }
 .align-item{
     align-items: center;
@@ -164,7 +169,7 @@ img{
     padding: 40px 10px 25px 10px;
 }
 .cover h4{
-    color: var(--color-light-grey);
+    color: var(--color-grey);
     padding-left: 10px;
 }
 .cards img{
@@ -182,7 +187,28 @@ img{
 .cards h4{
     color: var(--color-grey);
 }
-
+.branosx{
+    width: 250px;
+    padding: 10px 5px 5px 5px;
+}
+.branodx{
+  width: 250px;
+}
+.sinister{
+    width: 50px;
+    height: 50px;
+}
+.sinister h3{
+    font-size: 0.8em;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.sinister h4{
+    font-size: 0.5em;
+    padding-left: 10px;
+    white-space: nowrap;
+    color: var(--color-grey);
+}
 
 
 /* mediaquery */

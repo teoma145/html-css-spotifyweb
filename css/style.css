@@ -41,6 +41,7 @@ a{
 img{
   width: 100%;
 }
+
 .px{
     padding: 10px 0;
 }
@@ -188,11 +189,13 @@ img{
     color: var(--color-grey);
 }
 .branosx{
-    width: 250px;
-    padding: 10px 5px 5px 5px;
+    width: 200px;
+    padding: 10px 10px 5px 15px;
 }
 .branodx{
-  width: 250px;
+  width: 220px;
+  padding: 10px 0px 0 0;
+
 }
 .sinister{
     width: 50px;
@@ -209,14 +212,91 @@ img{
     white-space: nowrap;
     color: var(--color-grey);
 }
+.logosmall{
+    width: 30px;
+    display: none;
+}
+.iconsx{
+    padding:10px 0 0 20px;
+}
+.iconsx i{
+    padding-right: 10px;
+}
+.iconsx2{
+    padding: 20px 5px 5px 0px;
+}
+.iconsx2 i{
+    padding-right: 10px;
+}
+.playbar{
+    padding-top: 10px;
+    
+}
+.playbar i{
+    padding-right: 20px;
+    font-size: 1.3em;
+}
+.range{
+    padding: 10px 0 0 20px;
+    width: 70px;
+}
 
 
 /* mediaquery */
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1200px){
     .card-container {
         flex-wrap: wrap;
     }
     .cards{
         width: calc(100% / 4);
+    }
+}
+@media screen and (max-width: 992px){
+    .cards{
+        width: calc(100% / 2);
+    }
+    li{
+        margin:10px 0;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .sidept1 span{
+        display: none;
+    }
+    .playlist{
+        display: none;
+    }
+    .sidebar-action span{
+    display: none;
+    }
+    .logosmall{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .side-bar{
+        width: 50px;
+        padding: 5px 0px 0px 10px;
+    }
+    .main-content{
+        width:calc(100% - 50px);
+    }
+    .call-to-action{
+        width: calc(100% - 50px);
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .branosx{
+        display: none;
+    }
+    .branodx{
+        display: none;
+    }
+    .under-bar{
+        justify-content: center;
     }
 }

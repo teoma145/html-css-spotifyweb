@@ -18,10 +18,11 @@
         <div class="main flex">
             <div class="side-bar flex flex-column space ">
                 <div class="sidept1">
+                    <img src="img/logo-small.svg" alt="logosmall" class="logosmall">
                     <img src="img/logo.svg" alt="" class="logo">
-                    <div class="sidebar-action"><img src="img/home.svg" alt="Home">Home</div>
-                    <div class="sidebar-action"><img src="img/search.svg" alt="Home">Search</div>
-                    <div class="sidebar-action"><img src="img/libreria.svg" alt="Home">Libreria</div>
+                    <div class="sidebar-action"><img src="img/home.svg" alt="Home"><span>Home</span></div>
+                    <div class="sidebar-action"><img src="img/search.svg" alt="Home"><span>Search</span></div>
+                    <div class="sidebar-action"><img src="img/libreria.svg" alt="Home"><span>Libreria</span></div>
                     <div class="playlist">
                     <h4>Playlist</h4>
                     <div class="flex align-item px"><i class="fa-solid fa-square-plus iconplus" style="color: #b2a9a9;"></i>Crea Playlist</div>
@@ -35,7 +36,7 @@
                     </ul>
                 </div>
             </div>
-            <div>
+            <div class="download">
                    <div class="sidebar-action istalla"><img src="img/download.svg" alt="Home"><span>istalla app</span></div>
                    <hr>
                    <div class="sidebar-action profile"><img src="img/profile.svg" alt="Home"><span>Matteo Pupino</span></div>
@@ -125,20 +126,41 @@
             </div>
         </div>
         <div class="under-bar flex space">
-           <div class="branosx debug">
+           <div class="branosx">
               <div class="flex sinister debug">
                  <img src="img/sinister.jpeg" alt="sinister">
                  <div>
                     <h3>Sinister</h3>
                     <h4>Brano nome</h4>
                  </div>
+                 <div class="flex iconsx wrap">
+                    <i class="fa-regular fa-heart" style="color: #757070;"></i>
+                    <i class="fa-regular fa-folder" style="color: #857a7d;"></i>
+                 </div>
+                 
               </div>
             </div>
            <div class="playbar">
-              a
+            <div class="flex">
+                <i class="fa-solid fa-repeat" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
+                <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-rotate-right" style="color: #ffffff;"></i>
+            </div>
+            
+            <div class="range">
+            <input type="range">
+            </div>
+            
            </div>
-           <div class="branodx debug">
-              a
+           <div class="branodx">
+              <div class="flex iconsx2">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-desktop" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-volume-high" style="color: #ffffff;"></i>
+                <input type="range">
+              </div>
            </div>
         </div>
     </div>

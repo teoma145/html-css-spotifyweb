@@ -32,6 +32,13 @@ a{
 .flex-column{
     flex-direction: column;
 }
+.flex-end{
+    justify-content:flex-end;
+}
+.space{
+    justify-content: space-between;
+}
+
 .px{
     padding: 10px 0;
 }
@@ -66,6 +73,7 @@ a{
     width: 250px;
     background-color:var(--color-black);
     padding: 20px 50px 10px 30px;
+    
 }
 
 img{
@@ -79,6 +87,34 @@ img{
     color: white;
     margin: 15px 0;
 }
+.sidept1{
+    height:calc(100% - 80px);
+}
+.istalla{
+    color: var(--color-light-grey);
+    width: 20px;
+    
+}
+.profile{
+    background-color: var(--color-light-grey);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 2px;
+}
+.profile span{
+    font-size: 0.7em;
+    white-space: nowrap; 
+    padding: 5px;
+}
+.profile img{
+    object-fit: contain;
+    border-radius: 50%;
+}
+.istalla span{
+    font-size: 0.8em;
+    white-space: nowrap;
+}
 .iconplus{
     font-size: 3em;
     padding-right: 8px;
@@ -87,6 +123,7 @@ img{
     color: var(--color-light-grey);
     padding: 10px 0;
 }
+
 .main-content{
     width: calc(100% - 250px);
     padding: 90px 20px 0 20px;
@@ -95,23 +132,40 @@ img{
     flex-wrap: wrap;
 }
 .call-to-action{
-    background-color:var(--color-black);
-    opacity: 0.4;
+    background-color:rgba(0, 0,0,0.4);
     position: fixed;
     top: 0;
     left: 250px;
     width:calc(100% - 250px);
     height: 70px;
+    padding: 20px;
 }
+.callbtn{
+    border: 1px solid white;
+    padding: 10px 10px 15px 25px;
+    border-radius:20px;
+    color: var(--color-white);
+    width: 200px;
+    height: 35px;
+    font-size: 0.8em;
+}
+
 .navbar a{
     margin: 10px;
     color: var(--color-grey);
     font-weight:bold;
 }
+.main-content{
+    overflow: auto;
+}
 .cover h2{
     color: var(--color-white);
     font-size: 1.5em;
     padding: 40px 10px 25px 10px;
+}
+.cover h4{
+    color: var(--color-light-grey);
+    padding-left: 10px;
 }
 .cards img{
     width: 100%;
@@ -128,6 +182,7 @@ img{
 .cards h4{
     color: var(--color-grey);
 }
+
 
 
 /* mediaquery */

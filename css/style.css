@@ -188,6 +188,29 @@ img{
 }
 .cards{
     width: calc(100% / 6);
+    
+    
+}
+.relative{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.5s
+    
+} 
+
+.cards i{
+    font-size: 4em;
 }
 .cards h3{
     color: white;
@@ -244,7 +267,7 @@ img{
 }
 .playbar i{
     
-    font-size: 1.3em;
+    
     padding-left: 20px;
 }
 .range{
@@ -267,9 +290,33 @@ img{
 .navbar a:hover + .border-bot{
     display: block;
 }
-
-
-
+a{
+    color: var(--color-grey);
+}
+a:hover{
+    color: white;
+}
+.hovericon{
+    color: gray
+}
+.hovericon:hover{
+    color: white;
+    cursor: pointer;
+}
+.bigger{
+    height: 20px;
+    font-size: 1.5em;
+    margin-top:-3px;
+    margin-bottom: 5px;
+}
+.bigger:hover{
+    font-size: 1.8em;
+    margin-top: -6px;
+    margin-bottom: 8px;
+}
+.relative:hover .overlay{
+    opacity: 1;
+}
 
 /* mediaquery */
 @media screen and (max-width: 1200px){

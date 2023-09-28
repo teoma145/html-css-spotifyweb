@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/page.css">
     <title>Page</title>
 </head>
@@ -39,7 +40,14 @@
                     <h2>BEST SONGS EVAH</h2>
                     </div>
                 </div>
-               
+                <div class="play">
+                    <label for="audio-control"><i class="fa-solid fa-circle-play" style="color: #3ccb2a;"></i></label>
+                    <input type="checkbox" id="audio-control">
+                    <audio controls>
+                    <source src="../audio/gerry_bellissima.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+              
             </div>
 
             <div class="section2">

@@ -83,6 +83,7 @@ a{
     height: 20%;
     margin-bottom: 30px;
     background-color: rgb(78, 76, 76);
+    padding-left: 10px;
 }
 .btn{
     background-color: white;
@@ -112,4 +113,16 @@ a{
 }
 .singersection{
     padding-top: 20px;
+}
+.play{
+    height: 20%;
+    padding: 20px 0 0 40px;
+    font-size: 4em;
+}
+#audio-control + audio {
+    display: none;
+}
+
+#audio-control:checked + audio {
+    display: block;
 }

@@ -79,6 +79,7 @@ img{
     width: 250px;
     background-color:var(--color-black);
     padding: 20px 50px 10px 30px;
+    overflow: hidden;
     
 }
 
@@ -93,9 +94,7 @@ img{
     color: white;
     margin: 15px 0;
 }
-.sidept1{
-    height:calc(100% - 80px);
-}
+
 .istalla{
     color: var(--color-light-grey);
     width: 20px;
@@ -107,6 +106,7 @@ img{
     height: 30px;
     border-radius: 50%;
     padding: 2px;
+    margin-bottom: 5px;
 }
 .profile span{
     font-size: 0.7em;
@@ -144,16 +144,25 @@ img{
     left: 250px;
     width:calc(100% - 250px);
     height: 70px;
-    padding: 20px;
+    
 }
 .callbtn{
     border: 1px solid white;
-    padding: 10px 10px 15px 25px;
+    padding: 10px 10px 15px 10px;
+    margin: 20px 30px;
     border-radius:20px;
     color: var(--color-white);
     width: 200px;
     height: 35px;
     font-size: 0.8em;
+    transition: 0.5s;
+}
+.callbtn:hover {
+    cursor: pointer;
+    width: 210px;
+    height: 40px;
+    margin: 15px 25px;
+
 }
 
 .navbar a{
@@ -167,7 +176,7 @@ img{
 .cover h2{
     color: var(--color-white);
     font-size: 1.5em;
-    padding: 40px 10px 25px 10px;
+    padding: 30px 10px 25px 10px;
 }
 .cover h4{
     color: var(--color-grey);
@@ -193,7 +202,7 @@ img{
     padding: 10px 10px 5px 15px;
 }
 .branodx{
-  width: 220px;
+  width: 215px;
   padding: 10px 0px 0 0;
 
 }
@@ -230,16 +239,36 @@ img{
 }
 .playbar{
     padding-top: 10px;
+    width: 400px;
     
 }
 .playbar i{
-    padding-right: 20px;
+    
     font-size: 1.3em;
+    padding-left: 20px;
 }
 .range{
     padding: 10px 0 0 20px;
-    width: 70px;
+    width:100%;
+    
 }
+#myrange{
+    width:100%;
+    
+}
+.border-bot{
+    border-bottom: 2px solid green;
+    width: 50%;
+    margin: 0 auto;
+    display: none;
+    margin-bottom: -2px;
+    
+}
+.navbar a:hover + .border-bot{
+    display: block;
+}
+
+
 
 
 /* mediaquery */
@@ -287,6 +316,7 @@ img{
         width: calc(100% - 50px);
         left: 50px;
     }
+    
 }
 
 @media screen and (max-width: 576px){
